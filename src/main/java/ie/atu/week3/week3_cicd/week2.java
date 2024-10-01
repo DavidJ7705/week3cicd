@@ -26,8 +26,6 @@ public class week2 {
         return name + " "+ age;
     }
 
-
-
     @GetMapping("/message")
     public String getMessage(){
         return "the message";
