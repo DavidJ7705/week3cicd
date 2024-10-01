@@ -12,11 +12,17 @@ public class week2 {
     public String message(){
         return "Hello";
     }
-@GetMapping("/hello/{name}")
+    @GetMapping("/hello/{name}")
     public String myName(@PathVariable String name)
     {
         return "Your name is "+ name;
     }
+
+    @GetMapping("/greet/{name}")
+    public String greetByName(@PathVariable String name){
+        return  "Salutations "+ name;
+    }
+
 
     @GetMapping("/details")
     public String getDetails()
